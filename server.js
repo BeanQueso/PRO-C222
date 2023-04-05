@@ -23,12 +23,12 @@ app.post("/send-mail", (req, res) => {
     const mailData = {
         from: "",
         to: to,
-        subject: "Your payment is due!",
+        subject: "You have to pay!!",
         html: ` <p>
-                    Hello ${name},
+                    Hey ${name},
                 </p>
                 <p>
-                    This is a reminder email that your payment of amount - ${amount} is due on date - ${date}
+                    This is just a little reminder that - ${amount} is due on date - ${date}
                 </p>
                 <p>
                     Kindly make the payment before the due date to avoid any inconvenience.
