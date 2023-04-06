@@ -28,13 +28,13 @@ app.post("/send-mail", (req, res) => {
                     Hey ${name},
                 </p>
                 <p>
-                    This is just a little reminder that - ${amount} is due on date - ${date}
+                    This is just a little reminder that - ${amount} is due on - ${date}
                 </p>
                 <p>
-                    Kindly make the payment before the due date to avoid any inconvenience.
+                    Please make the payment before the due date !
                 </p>
                 <p>
-                    Thanks and Regards,
+                    Thank you.
                 </p>`
     };
     transporter.sendMail(mailData, (error, info) => {
